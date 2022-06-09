@@ -1,0 +1,202 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    /* text-align to complete body as all the section have the same requirement
+    and places where it is not required we can simply override it by just 
+    changing that element property */
+    text-align: center;
+}
+
+ /* padding is more specifically given to an container which is responsive
+ hence wrap all padded element inside an container fluid(bootstrap-container) 
+ and then give padding to it  */
+
+.container-fluid{
+    padding: 7% 10%;
+}
+/* heading  */
+.main-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    line-height:1.5;
+
+}
+.feature-heading{
+    font-weight:600;
+    font-size: 1.5rem;
+}
+.card-heading{
+    font-weight:600;
+    font-size: 1.5rem;
+}.section-heading{
+    font-weight:700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.price-heading{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+  /* color-section  */
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+.white-section{
+    background-color: #fff;
+}
+
+
+
+/* navigation bar */
+
+
+/* padding is preferred more than margin due to common 
+margin situation 
+mostly for padding , margin,width,size and all lenght depended element we tend to provide
+in dynamic sizing(such as % ,em ,rem and sometimes padding ,margin is given in px(static sizing)
+to avoid the additive nature of %,em when both the parent as well as child provides length to same element 
+we majorly use rem(root em)*/
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item{
+    padding:0 18px;
+    
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family:"Montserrat";
+    font-weight: lighter;
+}
+
+.navbar{
+    padding: 0 0 4.9rem;
+}
+
+
+/* Title */
+
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+.cont1{
+    padding: 3% 15% 7%;
+    margin-bottom: 0;
+    text-align: left;
+}
+.col0{
+    position: relative;
+}
+
+.profiledog{
+     width: 60%;  /* 60 per of its parent which 6 unit for large and full unit for medium/small */
+     /* As the angle is +ve it rotates the img 25% clkwise(left to right) */
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+
+/* features */
+
+.short-img{
+    color: #ef8172;
+    margin-bottom: 1rem;
+    
+}
+.descpt{
+    color: #8f8f8f;
+}
+/* as both the element dog img and feature are having position property the one with later in html flow will stack on top  */
+#features{
+    margin: 0px;
+   position: relative;
+}
+
+.col1{ 
+    padding: 5%;
+}
+
+.short-img:hover{
+    color: #ff4c68;
+}
+
+
+
+/* Testimonial */
+
+#testimonials{
+    background-color: #ef8172;
+}
+.testimonial-text{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* if the section is padded the button gets also jammed closely with info 
+hence provide to inner element */
+
+
+.testimonial-image{
+    /* image follow the parent alignment property as natural inline element  */
+    width: 10%;
+     border-radius: 100%;  /*a perfect circle */
+     margin: 20px;
+}
+
+
+
+
+/* press */
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;   
+}
+.brands{
+    width: 15%;
+    margin: 20px 30px 50px;
+}
+
+/* pricing  */
+
+#pricing{
+    padding: 100px;  
+}
+.price-col{
+    padding: 3% 2%;
+}
+
+/* call to action  */
+
+#cta .container-fluid,#footer .container-fluid{
+    padding: 7% 15%;
+}
+
+.media{
+    margin:20px 10px;
+}
+
+/* queries  */
+/* this code will get activated when width of page is 1028px or less  */
+/* always keep it at last  */
+@media (max-width:1028px) {
+    .profiledog{
+        position: static;
+        transform:rotate(0deg);
+    }
+    #title .cont1{
+        text-align: center;
+    }
+    .nav-list{
+        text-align: left;
+    }
+    #cta .container-fluid{
+        padding: 4rem;
+    }
+}
