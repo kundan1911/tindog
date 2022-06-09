@@ -1,0 +1,25 @@
+img{
+    width: 200px;
+    height: 200px; 
+    border-radius: 44%;
+ }
+ hr{
+border-width: 5px;
+border-style: none;
+border-top-style: dotted;
+padding: 0px;
+margin: 0px;
+width: 5%;
+margin-left: 25%;
+color: cadetblue;
+ }
+
+ body{
+     background-color: #B3E8E5;
+ }
+ 
+ h1,h3{
+     color: darkblue;
+     font-style: italic;
+ }
+ 
